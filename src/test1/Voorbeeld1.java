@@ -6,5 +6,6 @@ public class Voorbeeld1 {
 		// TODO Auto-generated method stub
 
 	}
+TESt32432
 
 }
