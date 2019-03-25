@@ -7,5 +7,5 @@ public class Voorbeeld1 {
 		// TODO Auto-generated method stub 1
 
 	}
-// test
+// test //test1
 }
