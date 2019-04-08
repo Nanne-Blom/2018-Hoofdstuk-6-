@@ -1,12 +1,11 @@
-package H6;
+package quizopdracht;
 
 public class quiz3 
 {
 int i = 3;
 int i2 = 8;
 
-public MijnKlasse()
-{
+public  {
 	i += 4;
 	i2 += 2;
 	public void print();

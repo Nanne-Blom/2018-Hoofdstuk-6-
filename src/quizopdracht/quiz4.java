@@ -1,4 +1,4 @@
-package H6;
+package quizopdracht;
 
 public class quiz4 
 {
@@ -18,9 +18,9 @@ public void print ()
 		}
 	}
 	System.out.print(x);
-	{
-		public static void main(String[] args)
-		MijnKlasse mk = new MijnKlasse();
+}
+		public static void main(String[] args) {
+		quiz4 mk = new quiz4();
 		mk.print();
 	}
 }

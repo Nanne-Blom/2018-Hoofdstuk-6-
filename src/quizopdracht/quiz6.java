@@ -1,4 +1,4 @@
-package H6;
+package quizopdracht;
 
 public class quiz6 
 {

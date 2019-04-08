@@ -1,4 +1,4 @@
-package H6;
+package quizopdracht;
 import java.util.Scanner;
 public class tafel {
 	public static void main(String[] args) 

@@ -1,4 +1,4 @@
-package H6;
+package quizopdracht;
 // hallo dit is een test
 public class quiz1
 {
