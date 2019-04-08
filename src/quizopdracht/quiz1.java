@@ -1,5 +1,5 @@
 package H6;
-
+// hallo dit is een test
 public class quiz1
 {
 double ozGoudPrijs = 1300.0;
