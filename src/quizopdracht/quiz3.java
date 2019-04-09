@@ -5,18 +5,18 @@ public class quiz3
 int i = 3;
 int i2 = 8;
 
-public  {
+public quiz3()  {
 	i += 4;
 	i2 += 2;
-	public void print();
+}
+	public void print() {
 	{
 		int x = i + i2;
 		System.out.print(x);
-	}
+	}}
 	public static void main (String[] args)
 	{
-		MijnKlasse mk = new MijnKlasse();
-			mk.print();pp0
+		quiz3 mk = new quiz3();
+			mk.print();
 	}
-}
 }

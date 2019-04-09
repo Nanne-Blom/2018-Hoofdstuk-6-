@@ -33,7 +33,7 @@ public void omrekenenNaarDollar(char valuta, int bedrag)
 }
 public static void main(String[] args)
 {
-	Valuta val = new Valuta();
+	quiz5 val = new quiz5();
 	val.omrekenenNaarDollar('f',100);
 }
 }

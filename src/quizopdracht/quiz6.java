@@ -22,11 +22,9 @@ public void mijnMethode(int x, int y)
 	z ++;
 	System.out.print(z);
 }
-		public static void main(String[] args
+		public static void main(String[] args)
 				{
-			Mijnklasse mk = new MijnKlasse();
-			mk.mijnmethode(3,9);
+			quiz6 mk = new quiz6();
+			mk.mijnMethode(3,9);
 				}
-	}
-}
 }
