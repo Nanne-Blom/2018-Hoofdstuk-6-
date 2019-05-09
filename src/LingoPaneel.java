@@ -1,7 +1,7 @@
 // Paneel met twee knoppen en een tekstvak
 import javax.swing.*;
 
-import com.sun.prism.paint.Color;
+//import com.sun.prism.paint.Color;
 
 import java.awt.event.*;
 import java.io.BufferedReader;
