@@ -2,6 +2,9 @@ package quizopdracht;
 import java.util.Scanner;
 public class tafel {
 	public static void main(String[] args) 
+	
+	// datum 9 mei 2019
+	//Nanne Blom
 	{
 		// var s = new Scanner(System.in);
 
