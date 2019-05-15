@@ -8,20 +8,21 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.*;
 import p3Opdrachten.QuickSort;
 public class S232H8OpdrachtA {
-static int AAA;
-
 	public static void main(String [] args) {
-	
-		ArrayList<Integer> arrayRandom = new ArrayList<Integer>(AAA);
-
-		Random rand = new Random();
-		rand.setSeed(System.currentTimeMillis());
-		for (int i=0; i<AAA; i++)
-		{
-		    Integer r = rand.nextInt() % 256;
-		    arrayRandom.add(r);
+	 
+			usingRandomClass();
 		}
+	ArrayList<Integer> Nummers = new ArrayList<Integer>();
+		static void usingRandomClass() {
+			Random randomGenerator = new Random();
+			int randomInt = randomGenerator.nextInt(10) + 1;
+			System.out.println("Random number generated is : " + randomInt);
+			 ArrayList.add(randomInt);
+		   
 
-			System.out.println(arrayRandom);
+		    System.out.println(Nummers);
+			
+		}
+		
 }
-}
+
