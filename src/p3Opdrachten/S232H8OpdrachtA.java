@@ -12,17 +12,27 @@ public class S232H8OpdrachtA {
 	 
 			usingRandomClass();
 		}
-	ArrayList<Integer> Nummers = new ArrayList<Integer>();
-		static void usingRandomClass() {
+	static int a;
+	static ArrayList<Integer> Nummers = new ArrayList<>();
+	
+	static void usingRandomClass() {
 			Random randomGenerator = new Random();
-			int randomInt = randomGenerator.nextInt(10) + 1;
-			System.out.println("Random number generated is : " + randomInt);
-			 ArrayList.add(randomInt);
-		   
 
-		    System.out.println(Nummers);
 			
-		}
-		
-}
+			
+
+	 int a = 0;
+			while (a < 100000) {
+				int randomInt = randomGenerator.nextInt(10000) + 1;
+	Nummers.add(randomInt);
+	a ++;
+
+			}		
+			System.out.print(Nummers);
+
+
+		    
+			
+	}
+	}
 
