@@ -24,17 +24,28 @@ public class S232H8OpdrachtA {
 	public static ArrayList<Integer> usingRandomClass(int maxAantal, int laagstewaarde, int hoogstewaarde) {
 		ArrayList<Integer> lijst = new ArrayList<>();
 		
-		Random randomGenerator = new Random();
 
 
-		for (int i =0;i<=maxAantal;i++) {
-			
+		for (int i = 0;i <= maxAantal;) {
+			i++;
 			lijst.add(    (int)( Math.random()*(hoogsteWaarde-laagsteWaarde))+laagsteWaarde    );
-	
-			System.out.println(""+ (int) lijst.get(i)); 		
-		}
-
+	System.out.print("aan");
+					
 		
+		for( int hoogsteWaarde = lijst.size()- 1; hoogsteWaarde >= 1; hoogsteWaarde-- ) {
+			for( int index = 0; index < hoogsteWaarde; index++ ) {
+				if( (int) lijst.get(index) > (int)lijst.get(index+1) ) {
+  				int hulp = (int) lijst.get(index);
+  				lijst.set(index,lijst.get(index+1) );
+  				lijst.set(index+1, hulp);
+  				
+  				System.out.println(""+ (int) lijst.get(i)); 
+				}
+			}
+		}
+		return lijst;
+		
+	}
 		return lijst;
 	}
 	
@@ -56,14 +67,7 @@ public class S232H8OpdrachtA {
 	
 	
 /*
-		for( int bovengrens = tabelBubbleSorted.size()- 1; bovengrens >= 1; bovengrens-- ) {
-			for( int index = 0; index < bovengrens; index++ ) {
-				if( (int) tabelBubbleSorted.get(index) > (int)tabelBubbleSorted.get(index+1) ) {
-  				int hulp = (int) tabelBubbleSorted.get(index);
-  				tabelBubbleSorted.set(index,tabelBubbleSorted.get(index+1) );
-  				tabelBubbleSorted.set(index+1, hulp);
-				}
-			}
+
 		}
 	
 	*/
