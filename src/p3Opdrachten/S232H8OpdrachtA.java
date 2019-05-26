@@ -25,12 +25,11 @@ public class S232H8OpdrachtA {
 		ArrayList<Integer> lijst = new ArrayList<>();
 		
 
-
 		for (int i = 0;i <= maxAantal;) {
 			i++;
 			lijst.add(    (int)( Math.random()*(hoogsteWaarde-laagsteWaarde))+laagsteWaarde    );
 	System.out.print("aan");
-					
+		}
 		
 		for( int hoogsteWaarde = lijst.size()- 1; hoogsteWaarde >= 1; hoogsteWaarde-- ) {
 			for( int index = 0; index < hoogsteWaarde; index++ ) {
