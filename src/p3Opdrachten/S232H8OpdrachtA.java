@@ -2,11 +2,11 @@ package p3Opdrachten;
 import java.util.ArrayList;
 import java.lang.Math; 
 import java.util.Random;
-
+import java.util.Scanner;
 
 public class S232H8OpdrachtA {
-	final static int maxAantal=1000;
-	final static int laagsteWaarde=1;
+	final static int maxAantal=0;
+	final static int laagsteWaarde=0;
 	final static int hoogsteWaarde=10000;
 	static ArrayList<Integer> nummerLijst = new ArrayList<>();
 
@@ -19,17 +19,25 @@ public class S232H8OpdrachtA {
 
 
 
-
-
 	public static ArrayList<Integer> usingRandomClass(int maxAantal, int laagstewaarde, int hoogstewaarde) {
 		ArrayList<Integer> lijst = new ArrayList<>();
-		
-
+			 
+		Scanner inputScanner = new Scanner(System.in);
+	 System.out.println("Voer een getal boven de 0 in! (bij hoge getallen kan het meerdere minuten duren).");
+	 
+	    String input = inputScanner.nextLine();
+	    
+	    inputScanner.close();
+	    int inputInt = Integer.parseInt(input);	
+	    System.out.println("");
+maxAantal = 0 + inputInt;
 		for (int i = 0;i <= maxAantal;) {
 			i++;
 			lijst.add(    (int)( Math.random()*(hoogsteWaarde-laagsteWaarde))+laagsteWaarde    );
 		}
-		
+		System.out.println(lijst);
+		System.out.println(maxAantal + " Nummers gegenereerd!");
+		System.out.println("");
 		for( int hoogsteWaarde = lijst.size()- 1; hoogsteWaarde >= 1; hoogsteWaarde-- ) {
 			for( int index = 0; index < hoogsteWaarde; index++ ) {
 				if( (int) lijst.get(index) > (int)lijst.get(index+1) ) {
@@ -42,7 +50,8 @@ public class S232H8OpdrachtA {
 			}
 		}
 		
-		System.out.println(""+ lijst); 
+		System.out.println(""+ lijst ); 
+		System.out.print(maxAantal + " Nummers gesorteerd!");
 return lijst;
 
 	}
