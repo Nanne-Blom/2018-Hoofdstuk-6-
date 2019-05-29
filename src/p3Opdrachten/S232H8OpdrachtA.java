@@ -15,7 +15,10 @@ public class S232H8OpdrachtA {
 
 
 		int maxAantal= leesGeheelGetal();
-		nummerLijst =usingRandomClass(maxAantal, laagsteWaarde, hoogsteWaarde);
+		nummerLijst =genereerArrayList(maxAantal, laagsteWaarde, hoogsteWaarde);
+		//roep methode drukLiojstaf aan ! input is de arraylist
+		//roep de merhode sorteerlArraylist aan met als input een ongesorteerde arraylis en als return de gesorteerdelijst 
+		//roep opnieuw de methode drukLijstAf aan
 	}
 
 	public static int leesGeheelGetal () {
@@ -28,15 +31,16 @@ public class S232H8OpdrachtA {
 		inputScanner.close();
 		//try en catch !!
 		int inputInt = Integer.parseInt(input);	
+		System.out.println("u heeft ingevoerd: "+inputInt );
 		return inputInt;
 
 	}
 
 
-	public static ArrayList<Integer> usingRandomClass(int maxAantal, int laagstewaarde, int hoogstewaarde) {
+	public static ArrayList<Integer> genereerArrayList(int maxAantal, int laagstewaarde, int hoogstewaarde) {
 		ArrayList<Integer> lijst = new ArrayList<>();
 
-	//	maxAantal = 0 + inputInt;
+		//	maxAantal = 0 + inputInt;
 		for (int i = 0;i <= maxAantal;) {
 			i++;
 			lijst.add(    (int)( Math.random()*(hoogsteWaarde-laagsteWaarde))+laagsteWaarde    );
@@ -44,6 +48,8 @@ public class S232H8OpdrachtA {
 		System.out.println(lijst);
 		System.out.println(maxAantal + " Nummers gegenereerd!");
 		System.out.println("");
+		
+		//deze code gaat om het sorteren...doe dat in de methode sorteerLijst
 		for( int hoogsteWaarde = lijst.size()- 1; hoogsteWaarde >= 1; hoogsteWaarde-- ) {
 			for( int index = 0; index < hoogsteWaarde; index++ ) {
 				if( (int) lijst.get(index) > (int)lijst.get(index+1) ) {
@@ -55,12 +61,20 @@ public class S232H8OpdrachtA {
 				}
 			}
 		}
-
-		System.out.println(""+ lijst ); 
 		System.out.print(maxAantal + " Nummers gesorteerd!");
+		System.out.println(""+ lijst ); 
+
 		return lijst;
 
 	}
+	
+	
+	
+	//opdracht: maak de methode drukLijstaf
+	//maak de methode sorteerLijst
+	
+	
+	
 
 
 	// EEN ARRALIST OMZETTEN NAAR EEN ARRAY
