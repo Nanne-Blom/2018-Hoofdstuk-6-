@@ -1,7 +1,6 @@
 package p3Opdrachten;
 import java.util.ArrayList;
 import java.lang.Math; 
-import java.util.Random;
 import java.util.Scanner;
 
 public class S232H8OpdrachtA {
@@ -10,13 +9,16 @@ public class S232H8OpdrachtA {
 	final static int hoogsteWaarde=10000;
 	static ArrayList<Integer> nummerLijst = new ArrayList<>();
 
-
+	public static void druklijstAf() {
+	
+	}
+	
 	public static void main(String [] args) {
 
 
 		int maxAantal= leesGeheelGetal();
 		nummerLijst =genereerArrayList(maxAantal, laagsteWaarde, hoogsteWaarde);
-		//roep methode drukLiojstaf aan ! input is de arraylist
+		//roep methode drukLijstAf aan ! input is de arraylist
 		//roep de merhode sorteerlArraylist aan met als input een ongesorteerde arraylis en als return de gesorteerdelijst 
 		//roep opnieuw de methode drukLijstAf aan
 	}
@@ -49,7 +51,7 @@ public class S232H8OpdrachtA {
 		System.out.println(maxAantal + " Nummers gegenereerd!");
 		System.out.println("");
 		
-		//deze code gaat om het sorteren...doe dat in de methode sorteerLijst
+		//deze code gaat om het sorteren. doe dat in de methode sorteerLijst
 		for( int hoogsteWaarde = lijst.size()- 1; hoogsteWaarde >= 1; hoogsteWaarde-- ) {
 			for( int index = 0; index < hoogsteWaarde; index++ ) {
 				if( (int) lijst.get(index) > (int)lijst.get(index+1) ) {
