@@ -51,7 +51,7 @@ public class S232H8OpdrachtA {
 		System.out.println(maxAantal + " Nummers gegenereerd!");
 		System.out.println("");
 		
-		//deze code gaat om het sorteren. doe dat in de methode sorteerLijst
+		//deze code gaat om het sorteren. Doe dat in de methode sorteerLijst
 		for( int hoogsteWaarde = lijst.size()- 1; hoogsteWaarde >= 1; hoogsteWaarde-- ) {
 			for( int index = 0; index < hoogsteWaarde; index++ ) {
 				if( (int) lijst.get(index) > (int)lijst.get(index+1) ) {
