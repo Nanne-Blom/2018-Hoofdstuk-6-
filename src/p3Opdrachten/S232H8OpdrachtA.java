@@ -9,7 +9,10 @@ public class S232H8OpdrachtA {
 	final static int hoogsteWaarde=10000;
 	static ArrayList<Integer> nummerLijst = new ArrayList<>();
 
-
+	public static void druklijstAf() {
+	
+	}
+	
 	public static void main(String [] args) {
 
 
