@@ -9,10 +9,7 @@ public class S232H8OpdrachtA {
 	final static int hoogsteWaarde=10000;
 	static ArrayList<Integer> nummerLijst = new ArrayList<>();
 
-	public static void druklijstAf() {
-	
-	}
-	//test
+
 	public static void main(String [] args) {
 
 
@@ -50,7 +47,9 @@ public class S232H8OpdrachtA {
 		System.out.println(lijst);
 		System.out.println(maxAantal + " Nummers gegenereerd!");
 		System.out.println("");
+	}
 		
+		public String sorteerLijst {
 		//deze code gaat om het sorteren. Doe dat in de methode sorteerLijst
 		for( int hoogsteWaarde = lijst.size()- 1; hoogsteWaarde >= 1; hoogsteWaarde-- ) {
 			for( int index = 0; index < hoogsteWaarde; index++ ) {
@@ -58,20 +57,26 @@ public class S232H8OpdrachtA {
 					int hulp = (int) lijst.get(index);
 					lijst.set(index,lijst.get(index+1) );
 					lijst.set(index+1, hulp);
-
+				}
 
 				}
 			}
-		}
-		System.out.print(maxAantal + " Nummers gesorteerd!");
-		System.out.println(""+ lijst ); 
+		
+
 
 		return lijst;
 
 	}
 	
+
+
 	
-	
+
+
+//public static void druklijstAf() {
+	//System.out.print(maxAantal + " Nummers gesorteerd!");
+//System.out.println(""+ lijst ); 
+}
 	//opdracht: maak de methode drukLijstaf
 	//maak de methode sorteerLijst
 	
