@@ -35,7 +35,6 @@ public class S232H8OpdrachtA {
 
 	}
 
-
 	public static ArrayList<Integer> genereerArrayList(int maxAantal, int laagstewaarde, int hoogstewaarde) {
 		ArrayList<Integer> lijst = new ArrayList<>();
 
