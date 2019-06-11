@@ -49,7 +49,7 @@ public class S232H8OpdrachtA {
 	}
 		
 		static void sorteerLijst() {
-		//deze code gaat om het sorteren. Doe dat in de methode sorteerLijst
+		//deze code gaat om het sorteren. Doe dat in de methode sorteerLijst.
 		for( int hoogsteWaarde = lijst.size()- 1; hoogsteWaarde >= 1; hoogsteWaarde-- ) {
 			for( int index = 0; index < hoogsteWaarde; index++ ) {
 				if( (int) lijst.get(index) > (int)lijst.get(index+1) ) {
