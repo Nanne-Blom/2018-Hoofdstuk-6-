@@ -8,6 +8,7 @@ public class S232H8OpdrachtA {
 	final static int laagsteWaarde=0;
 	final static int hoogsteWaarde=10000;
 	static ArrayList<Integer> nummerLijst = new ArrayList<>();
+	static ArrayList<Integer> gesorteerdNummerLijst = new ArrayList<>();
 
 
 	public static void main(String [] args) {
@@ -15,6 +16,8 @@ public class S232H8OpdrachtA {
 
 		int maxAantal= leesGeheelGetal();
 		nummerLijst =genereerArrayList(maxAantal, laagsteWaarde, hoogsteWaarde);
+		gesorteerdNummerLijst=sorteerLijst(nummerLijst);
+		
 		//roep methode drukLijstAf aan ! input is de arraylist
 		//roep de merhode sorteerlArraylist aan met als input een ongesorteerde arraylis en als return de gesorteerdelijst 
 		//roep opnieuw de methode drukLijstAf aan
@@ -47,8 +50,8 @@ public class S232H8OpdrachtA {
 		System.out.println(maxAantal + " Nummers gegenereerd!");
 		System.out.println("");
 	}
-		
-		static void sorteerLijst() {
+
+	public static ArrayList<Integer>  sorteerLijst(ArrayList<Integer> lijst) {t
 		//deze code gaat om het sorteren. Doe dat in de methode sorteerLijst.
 		for( int hoogsteWaarde = lijst.size()- 1; hoogsteWaarde >= 1; hoogsteWaarde-- ) {
 			for( int index = 0; index < hoogsteWaarde; index++ ) {
@@ -58,45 +61,44 @@ public class S232H8OpdrachtA {
 					lijst.set(index+1, hulp);
 				}
 
-				}
 			}
-		
-            
+		}
+
+
 
 		return lijst;
 
 	}
-	
 
 
-	
 
 
-//public static void druklijstAf() {
+
+
+	//public static void druklijstAf() {
 	//System.out.print(maxAantal + " Nummers gesorteerd!");
-//System.out.println(""+ lijst ); 
+	//System.out.println(""+ lijst ); 
 }
-	//opdracht: maak de methode drukLijstaf
-	//maak de methode sorteerLijst
-	
-	
-	
-
-
-	// EEN ARRALIST OMZETTEN NAAR EEN ARRAY
-	// LASTIG IS DAT HET ARRAY DUS EEN VAST AANTAL ELEMENTEN HEEFT EN EEN ARRAYLIST IN PRINCIOE NIET
-	// DAAROM WORDT DE SIZE VAN HET ARRAYLIST BEREKEND EN GEBRUIKT OM DE GROOTE VAN HET ARRAY TE BEPALEN
-	//public static int[] convertertoArray(ArrayList list){
-	//  int lengte =list.size();
-	// int tabel[] = new int[lengte];
-
-	// for (int i=0;i<lengte;i++) {
-	//LET OP TYPECAST IS NOODZAKELIJK ZIE PRESENTATIE 
-	//tabel[i]=(int)list.get(i);  
-	//  }	 
-	//EEN ARRAY TERUG GEVEN
-	//  return tabel;
+//opdracht: maak de methode drukLijstaf
+//maak de methode sorteerLijst
 
 
 
-}
+
+
+// EEN ARRALIST OMZETTEN NAAR EEN ARRAY
+// LASTIG IS DAT HET ARRAY DUS EEN VAST AANTAL ELEMENTEN HEEFT EN EEN ARRAYLIST IN PRINCIOE NIET
+// DAAROM WORDT DE SIZE VAN HET ARRAYLIST BEREKEND EN GEBRUIKT OM DE GROOTE VAN HET ARRAY TE BEPALEN
+//public static int[] convertertoArray(ArrayList list){
+//  int lengte =list.size();
+// int tabel[] = new int[lengte];
+
+// for (int i=0;i<lengte;i++) {
+//LET OP TYPECAST IS NOODZAKELIJK ZIE PRESENTATIE 
+//tabel[i]=(int)list.get(i);  
+//  }	 
+//EEN ARRAY TERUG GEVEN
+//  return tabel;
+
+
+
