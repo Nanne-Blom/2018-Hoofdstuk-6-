@@ -32,12 +32,15 @@ public class S232H8OpdrachtA {
 
 		inputScanner.close();
 		//try en catch !!
+		 
 		int inputInt = Integer.parseInt(input);	
+		
 		System.out.println("u heeft ingevoerd: "+inputInt );
 		return inputInt;
 
 	}
 
+	
 	public static ArrayList<Integer> genereerArrayList(int maxAantal, int laagstewaarde, int hoogstewaarde) {
 		ArrayList<Integer> lijst = new ArrayList<>();
 
@@ -45,12 +48,14 @@ public class S232H8OpdrachtA {
 		for (int i = 0;i <= maxAantal;) {
 			i++;
 			lijst.add(    (int)( Math.random()*(hoogsteWaarde-laagsteWaarde))+laagsteWaarde    );
+		
 		}
-		System.out.println(lijst);
-		System.out.println(maxAantal + " Nummers gegenereerd!");
-		System.out.println("");
+
 		return lijst;
 	}
+	public static void drukLijstAf(ArrayList<Integer> lijst ) {
+	System.out.println("test"+ lijst );
+}
 
 	public static ArrayList<Integer>  sorteerLijst(ArrayList<Integer> lijst) {
 		//deze code gaat om het sorteren. Doe dat in de methode sorteerLijst.
@@ -66,7 +71,6 @@ public class S232H8OpdrachtA {
 		}
 
 
-
 		return lijst;
 
 	}
@@ -76,9 +80,9 @@ public class S232H8OpdrachtA {
 
 
 
-	//public static void druklijstAf() {
-	//System.out.print(maxAantal + " Nummers gesorteerd!");
-	//System.out.println(""+ lijst ); 
+
+
+
 }
 //opdracht: maak de methode drukLijstaf
 //maak de methode sorteerLijst
