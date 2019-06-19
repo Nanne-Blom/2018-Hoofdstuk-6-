@@ -37,7 +37,6 @@ public class S232H8OpdrachtA {
 		
 		System.out.println("u heeft ingevoerd: "+inputInt );
 		return inputInt;
-
 	}
 
 	
