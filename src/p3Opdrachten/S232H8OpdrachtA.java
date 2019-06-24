@@ -17,7 +17,6 @@ public class S232H8OpdrachtA {
 		int maxAantal= leesGeheelGetal();
 		nummerLijst =genereerArrayList(maxAantal, laagsteWaarde, hoogsteWaarde);
 		gesorteerdNummerLijst=sorteerLijst(nummerLijst);
-		
 		//roep methode drukLijstAf aan ! input is de arraylist
 		//roep de merhode sorteerlArraylist aan met als input een ongesorteerde arraylis en als return de gesorteerdelijst 
 		//roep opnieuw de methode drukLijstAf aan
